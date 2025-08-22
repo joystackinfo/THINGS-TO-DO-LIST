@@ -1,9 +1,17 @@
-const form = document.getElementById("task-form");  // to get the form element
-const taskinput = document.getElementById("task-input"); //to get the taskinput element
-const tasklist = document.getElementById("task-list"); // to get the tasklist element
+const taskInput = document.getElementById("taskInput"); 
+const addTaskBtn = document.getElementById("addTask"); 
+const taskList = document.getElementById("taskList"); 
 
-function addTask(){
-    if (taskinput.value === "" ) {
+function addTask() {
+    if (taskInput.value.trim() === "") {
         alert("Please enter a task.");
         return;
-   
+    }
+
+    const li = document.createElement("li");
+    li.textContent = taskInput.value;
+
+    taskList.appendChild(li);
+    taskInput.value = ""; // clear input
+}
+
