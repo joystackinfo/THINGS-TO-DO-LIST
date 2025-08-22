@@ -51,7 +51,7 @@ h1 {
     cursor: pointer;
 }
 
-#addTaskButton:hover {
+#addTask:hover {
     background-color: #218838;
 }
 
