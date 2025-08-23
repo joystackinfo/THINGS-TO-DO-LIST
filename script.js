@@ -16,4 +16,4 @@ function addTask() {
     span.innerHTML="&#10006;";
     li.appendChild(span);
 }
-addTaskBtn.addEventListener("click", addTask);
+   taskInput.value = "";
