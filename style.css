@@ -17,7 +17,7 @@ body {
     width: 400px;
     max-width: 100%;
     text-align: center;
-    color: burlywood;
+    color: black;
 }
 
 h1 {
@@ -56,26 +56,44 @@ h1 {
 }
 
 #taskList {
-    list-style: none;
+    list-style: none; /* remove default bullets */
     padding: 0;
+    margin: 0;
 }
 
 #taskList li {
     background-color: #f4f4f4;
-    padding: 10px;
+    padding: 10px 10px 10px 35px; /* space for circle */
     margin-bottom: 8px;
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    position: relative;
 }
 
+/* The circle before each task */
+#taskList li::before {
+    content: "○"; /* hollow circle */
+    position: absolute;
+    left: 10px;
+    font-size: 18px;
+    color: black;
+}
+
+/* When task is completed */
 #taskList li.completed {
     text-decoration: line-through;
     color: #888;
 }
 
+#taskList li.completed::before {
+    content: "✔"; /* checkmark */
+    color: green;
+}
+
+/* Buttons for edit/delete */
 #taskList li button {
     background-color: red;
     color: white;

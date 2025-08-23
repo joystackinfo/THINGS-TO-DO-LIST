@@ -10,8 +10,10 @@ function addTask() {
 
     const li = document.createElement("li");
     li.textContent = taskInput.value;
-
     taskList.appendChild(li);
     taskInput.value = ""; // clear input
+    let span = document.createElement("span");
+    span.innerHTML="&#10006;";
+    li.appendChild(span);
 }
-
+addTaskBtn.addEventListener("click", addTask);
