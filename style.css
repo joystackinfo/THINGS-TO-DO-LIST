@@ -78,7 +78,7 @@ h1 {
     content: "○"; /* hollow circle */
     position: absolute;
     left: 10px;
-    font-size: 18px;
+    font-size: 35px;
     color: black;
 }
 
