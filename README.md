@@ -13,3 +13,11 @@ A simple and clean to-do list app for keeping track of daily tasks.
 
 ---
 
+
+
+# My To-Do List App
+
+A simple web app built with HTML, CSS, and JavaScript.  
+Features include:  
+
+
