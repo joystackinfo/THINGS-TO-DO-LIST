@@ -19,5 +19,10 @@ A simple and clean to-do list app for keeping track of daily tasks.
 
 A simple web app built with HTML, CSS, and JavaScript.  
 Features include:  
+- Adding new tasks  
+- Marking tasks as complete  
+- Deleting tasks  
+
+This is part of my coding journey 🚀.
 
 
