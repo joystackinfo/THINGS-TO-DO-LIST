@@ -1,26 +1,49 @@
-const taskInput = document.getElementById("taskInput"); 
-const addTaskBtn = document.getElementById("addTask"); 
-const taskList = document.getElementById("taskList"); 
+
+document.getElementById("addTask").addEventListener("click", addTask);
 
 function addTask() {
-    if (taskInput.value.trim() === "") {
-        alert("Please enter a task.");
-        return;
-    }
+  const input = document.getElementById("taskInput");
+  const taskText = input.value.trim();
 
-    const li = document.createElement("li");
-    li.textContent = taskInput.value;
-    taskList.appendChild(li);
-    taskInput.value = ""; // clear input
-    
-    let span = document.createElement("span");
-    span.innerHTML="&#10006;";
-    li.appendChild(span);
+  if (taskText === "") return; // stop empty tasks
+
+  const li = document.createElement("li");
+
+  // circle toggle
+  const circle = document.createElement("div");
+  circle.className = "circle";
+  circle.addEventListener("click", () => {
+    li.classList.toggle("completed");
+  });
+
+  // task text
+  const span = document.createElement("span");
+  span.textContent = taskText;
+
+  // edit button
+  const editBtn = document.createElement("button");
+  editBtn.textContent = "Edit";
+  editBtn.addEventListener("click", () => {
+    const newText = prompt("Edit your task:", span.textContent);
+    if (newText !== null && newText.trim() !== "") {
+      span.textContent = newText.trim();
+    }
+  });
+
+  // delete button
+  const delBtn = document.createElement("button");
+  delBtn.textContent = "Delete";
+  delBtn.addEventListener("click", () => {
+    li.remove();
+  });
+
+  // put everything inside li
+  li.appendChild(circle);
+  li.appendChild(span);
+  li.appendChild(editBtn);
+  li.appendChild(delBtn);
+
+  document.getElementById("taskList").appendChild(li);
+
+  input.value = "";
 }
-    // delete button
-const delBtn = document.createElement("button");
-delBtn.textContent = "Delete";
-delBtn.addEventListener("click", () => {
-li.remove();
-});
-li.appendChild(delBtn);
