@@ -35,7 +35,7 @@ h1 {
 #taskInput {
     flex: 1;
     padding: 10px;
-    border: 2px solid #ccc;
+    border: 2px solid #040000;
     border-radius: 10px;
     font-size: 18px;
     color: black;
@@ -62,7 +62,7 @@ h1 {
 }
 
 #taskList li {
-    background-color: #f4f4f4;
+    background-color: #b081bb;
     padding: 10px 10px 10px 35px; /* space for circle */
     margin-bottom: 8px;
     border-radius: 5px;
