@@ -20,3 +20,7 @@ function addTask() {
     // delete button
 const delBtn = document.createElement("button");
 delBtn.textContent = "Delete";
+delBtn.addEventListener("click", () => {
+li.remove();
+});
+li.appendChild(delBtn);
