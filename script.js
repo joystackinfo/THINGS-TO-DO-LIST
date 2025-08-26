@@ -17,4 +17,6 @@ function addTask() {
     span.innerHTML="&#10006;";
     li.appendChild(span);
 }
-   
+    // delete button
+const delBtn = document.createElement("button");
+delBtn.textContent = "Delete";
