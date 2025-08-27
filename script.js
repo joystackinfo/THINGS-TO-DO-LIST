@@ -20,3 +20,6 @@ function addTask() {
   const span = document.createElement("span");
   span.textContent = taskText;
 
+  // delete button 🗑️
+  const delBtn = document.createElement("button");
+  
