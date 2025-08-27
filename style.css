@@ -72,6 +72,11 @@ h1 {
     cursor: pointer;
     position: relative;
 }
+.circle {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #555;
+  
 
 /* The circle before each task */
 #taskList li::before {
