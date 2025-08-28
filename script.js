@@ -29,4 +29,5 @@ function addTask() {
   //edit button
   const editBtn = document.createElement("button");
   editBtn.textContent = "✏️ Edit";
-  
+  editBtn.addEventListener("click", () => {
+    
