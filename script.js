@@ -22,7 +22,11 @@ function addTask() {
 
   // delete button 🗑️
   const delBtn = document.createElement("button");
-  delBtn.textContent = "Delete";
+  delBtn.textContent = "🗑️ Delete";
   delBtn.addEventListener("click", () => {
     li.remove();  // removes the whole <li>
   });
+  //edit button
+  const editBtn = document.createElement("button");
+  editBtn.textContent = "✏️ Edit";
+  
