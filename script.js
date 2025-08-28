@@ -30,4 +30,4 @@ function addTask() {
   const editBtn = document.createElement("button");
   editBtn.textContent = "✏️ Edit";
   editBtn.addEventListener("click", () => {
-    
+    const newTaskText = prompt("Edit task:", span.textContent);
