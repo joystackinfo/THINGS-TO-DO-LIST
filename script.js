@@ -1,11 +1,9 @@
-
-document.getElementById("addTask").addEventListener("click", addTask);  // show add task button
+document.getElementById("addTask").addEventListener("click", addTask);
 
 function addTask() {
   const input = document.getElementById("taskInput");
   const taskText = input.value.trim();
-
-  if (taskText === "") return; // stop empty tasks
+  if (taskText === "") return;
 
   const li = document.createElement("li");
 
@@ -13,33 +11,36 @@ function addTask() {
   const circle = document.createElement("div");
   circle.className = "circle";
   circle.addEventListener("click", () => {
-    li.classList.toggle("completed");
+    li.classList.toggle("completed"); // strike-through text
+    circle.classList.toggle("checked"); // red circle + ✔
   });
 
   // task text
   const span = document.createElement("span");
   span.textContent = taskText;
 
-  // delete button 🗑️
-  const delBtn = document.createElement("button");
-  delBtn.textContent = "🗑️ Delete";
-  delBtn.addEventListener("click", () => {
-    li.remove();  // removes the whole <li>
-  });
-  //edit button
+  // edit button
   const editBtn = document.createElement("button");
-  editBtn.textContent = "✏️ Edit";
+  editBtn.textContent = "Edit";
   editBtn.addEventListener("click", () => {
-    const newTaskText = prompt("Edit task:", span.textContent);
-    if (newTaskText !== null) {
-      span.textContent = newTaskText;
+    const newText = prompt("Edit task:", span.textContent);
+    if (newText !== null) {
+      span.textContent = newText;
     }
   });
- 
+
+  // delete button
+  const deleteBtn = document.createElement("button");
+  deleteBtn.textContent = "Delete";
+  deleteBtn.addEventListener("click", () => {
+    li.remove();
+  });
+
   li.appendChild(circle);
   li.appendChild(span);
   li.appendChild(editBtn);
-  li.appendChild(delBtn);
-  document.getElementById("tasklist").appendChild(li);
-  input.value = ""; // clear input
+  li.appendChild(deleteBtn);
+
+  document.getElementById("taskList").appendChild(li);
+  input.value = ""; // clear input field
 }

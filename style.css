@@ -1,116 +1,116 @@
 body {
-    background-color: indigo;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: indigo;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-    background-color: white;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 400px;
-    max-width: 100%;
-    text-align: center;
-    color: black;
+  background-color: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 400px;
+  max-width: 100%;
+  text-align: center;
+  color: black;
 }
 
 h1 {
-    color: rgb(14, 2, 2);
-    font-weight: bold;
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .input-section {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
 #taskInput {
-    flex: 1;
-    padding: 10px;
-    border: 2px solid #040000;
-    border-radius: 10px;
-    font-size: 18px;
-    color: black;
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #040000;
+  font-size: 18px;
 }
 
 #addTask {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 30px;
-    background-color: #28a745;
-    color: white;
-    font-size: 18px;
-    cursor: pointer;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 30px;
+  background-color: #28a745;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
 }
 
 #addTask:hover {
-    background-color: #218838;
+  background-color: #218838;
 }
 
 #taskList {
-    list-style: none; /* remove default bullets */
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 #taskList li {
-    background-color: #b081bb;
-    padding: 10px 10px 10px 35px; /* space for circle */
-    margin-bottom: 8px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    position: relative;
+  background-color: #b081bb;
+  padding: 10px 10px 10px 35px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
 }
+
 .circle {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   border: 2px solid #555;
   border-radius: 50%;
   margin-right: 10px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: transparent; /* hide check until checked */
+  transition: all 0.2s ease;
 }
 
-/* The circle before each task */
-#taskList li::before {
-    content: "○"; /* hollow circle */
-    position: absolute;
-    left: 10px;
-    font-size: 35px;
-    color: black;
+.circle.checked {
+  background-color: rgb(255, 2, 40); /* red fill */
+  color: white;
 }
 
-/* When task is completed */
-#taskList li.completed {
-    text-decoration: line-through;
-    color: #888;
+.circle.checked::after {
+  content: "✔";
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
 }
 
-#taskList li.completed::before {
-    content: "✔"; /* checkmark */
-    color: green;
+#taskList li.completed span {
+  text-decoration: line-through;
+  color: #888;
 }
 
-/* Buttons for edit/delete */
 #taskList li button {
-    background-color: red;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5px;
 }
 
 #taskList li button:hover {
-    background-color: darkred;
+  background-color: darkred;
 }
