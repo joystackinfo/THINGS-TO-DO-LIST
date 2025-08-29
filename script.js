@@ -35,3 +35,5 @@ function addTask() {
       span.textContent = newTaskText;
     }
   });
+ 
+  li.appendChild(circle);
