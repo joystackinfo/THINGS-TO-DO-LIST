@@ -40,3 +40,4 @@ function addTask() {
   li.appendChild(span);
   li.appendChild(editBtn);
   li.appendChild(delBtn);
+  document.getElementById("tasklist").appendChild(li);
