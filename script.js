@@ -41,3 +41,5 @@ function addTask() {
   li.appendChild(editBtn);
   li.appendChild(delBtn);
   document.getElementById("tasklist").appendChild(li);
+  input.value = ""; // clear input
+}
