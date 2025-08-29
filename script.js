@@ -38,3 +38,4 @@ function addTask() {
  
   li.appendChild(circle);
   li.appendChild(span);
+  li.appendChild(editBtn);
