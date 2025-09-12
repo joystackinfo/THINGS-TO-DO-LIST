@@ -35,7 +35,7 @@ h1 {
   padding: 10px;
   border-radius: 10px;
   border: 2px solid #040000;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 #addTask {
@@ -85,7 +85,7 @@ h1 {
 }
 
 .circle.checked {
-  background-color: rgb(255, 2, 40); /* red fill */
+  background-color: rgb(38, 131, 4); /* red fill */
   color: white;
 }
 
@@ -111,6 +111,7 @@ h1 {
   margin-left: 5px;
 }
 
-#taskList li button:hover {
-  background-color: darkred;
+#taskList li .edit-btn {
+  background-color: #6c757d; /* gray */
+  color: white;
 }

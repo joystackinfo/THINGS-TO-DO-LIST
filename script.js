@@ -4,8 +4,14 @@ function addTask() {
   const input = document.getElementById("taskInput");
   const taskText = input.value.trim();
   if (taskText === "") return;
-
+   
   const li = document.createElement("li");
+
+ if (taskText.trim() === "") {
+  alert("Please enter a valid task.");
+  return;
+
+};
 
   // circle toggle
   const circle = document.createElement("div");
@@ -21,6 +27,7 @@ function addTask() {
 
   // edit button
   const editBtn = document.createElement("button");
+  editBtn.className = "edit-btn";
   editBtn.textContent = "Edit";
   editBtn.addEventListener("click", () => {
     const newText = prompt("Edit task:", span.textContent);
