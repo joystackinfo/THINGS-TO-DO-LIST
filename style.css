@@ -112,6 +112,6 @@ h1 {
 }
 
 #taskList li .edit-btn {
-  background-color: #6c757d; /* gray */
+  background-color: blue;
   color: white;
 }
