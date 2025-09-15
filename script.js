@@ -8,7 +8,7 @@ function addTask() {
   const li = document.createElement("li");
 
  if (taskText.trim() === "") {
-  alert("Please enter a valid task.");
+  alert("Please enter a valid task."); // 
   return;
 
 };
