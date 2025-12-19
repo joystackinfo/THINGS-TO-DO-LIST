@@ -1,6 +1,6 @@
 # 📝 Things To Do List
 
-A simple and clean to-do list app for keeping track of daily tasks.  
+A simple and clean to-do list app for keeping track of daily tasks, built with HTML, CSS, and JavaScript. 
 
 ## ✨ Features
 - Add and remove tasks  
@@ -12,14 +12,6 @@ A simple and clean to-do list app for keeping track of daily tasks.
 2. Start adding your tasks!  
 
 ---
-
-
-
-# My To-Do List App
-
-A simple web app built with HTML, CSS, and JavaScript.  
-Features include:  
-- Adding new tasks  
-- Marking tasks as complete  
+ 
 - Deleting tasks  
 
