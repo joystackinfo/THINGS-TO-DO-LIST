@@ -6,6 +6,7 @@ A simple and clean to-do list app for keeping track of daily tasks, built with H
 - Add and remove tasks  
 - Mark tasks as done  
 - Stay organized with ease  
+- Deleting tasks 
 
 ## 🚀 How to Use
 1. Open `index.html` in your browser  
