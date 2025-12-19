@@ -23,6 +23,3 @@ Features include:
 - Marking tasks as complete  
 - Deleting tasks  
 
-This is part of my coding journey 🚀.
-
-
