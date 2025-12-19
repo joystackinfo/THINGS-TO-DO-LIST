@@ -13,5 +13,4 @@ A simple and clean to-do list app for keeping track of daily tasks, built with H
 
 ---
  
-- Deleting tasks  
-
+ 
