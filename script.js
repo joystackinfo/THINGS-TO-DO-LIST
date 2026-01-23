@@ -14,7 +14,7 @@ function addTask() {
 };
 
   // circle toggle
-  const circle = document.createElement("div");
+  const circle = document.createElement("div"); // create circle div
   circle.className = "circle";
   circle.addEventListener("click", () => {
     li.classList.toggle("completed"); // strike-through text
@@ -27,7 +27,7 @@ function addTask() {
 
   // edit button
   const editBtn = document.createElement("button");
-  editBtn.className = "edit-btn";
+  editBtn.className = "edit-btn"; // add class for styling
   editBtn.textContent = "Edit";
   editBtn.addEventListener("click", () => {
     const newText = prompt("Edit task:", span.textContent);
@@ -44,7 +44,7 @@ function addTask() {
   });
 
   li.appendChild(circle); // append circle
-  li.appendChild(span);
+  li.appendChild(span); // append task text
   li.appendChild(editBtn); // append edit button
   li.appendChild(deleteBtn); // append delete button
 
