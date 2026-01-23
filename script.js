@@ -43,10 +43,10 @@ function addTask() {
     li.remove();
   });
 
-  li.appendChild(circle);
+  li.appendChild(circle); // append circle
   li.appendChild(span);
-  li.appendChild(editBtn);
-  li.appendChild(deleteBtn);
+  li.appendChild(editBtn); // append edit button
+  li.appendChild(deleteBtn); // append delete button
 
   document.getElementById("taskList").appendChild(li);
   input.value = ""; // clear input field
