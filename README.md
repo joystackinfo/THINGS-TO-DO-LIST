@@ -4,7 +4,7 @@ A simple and clean to-do list app for keeping track of daily tasks, built with H
 
 ## ✨ Features
 - Add and remove tasks  
-- Mark tasks as done  
+- Mark tasks as
 - Stay organized with ease  
 - Deleting tasks 
 
