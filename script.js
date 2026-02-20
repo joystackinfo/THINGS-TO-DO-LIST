@@ -1,7 +1,7 @@
 document.getElementById("addTask").addEventListener("click", addTask);
 
 function addTask() {
-  const input = document.getElementById("taskInput");
+ const input = document.getElementById("taskInput");
   const taskText = input.value.trim();
   if (taskText === "") return;
    
