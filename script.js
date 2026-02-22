@@ -30,12 +30,7 @@ function addTask() {
   editBtn.className = "edit-btn"; // add class for styling
   editBtn.textContent = "Edit";
   editBtn.addEventListener("click", () => {
-    const newText = prompt("Edit task:", span.textContent);
-    if (newText !== null) {
-      span.textContent = newText;
-    }
-  });
-
+  
   // delete button
   const deleteBtn = document.createElement("button");
   deleteBtn.textContent = "Delete";
