@@ -17,8 +17,7 @@ function addTask() {
     const circle = document.createElement("div"); // create circle div
   circle.className = "circle";
   circle.addEventListener("click", () => {
-    li.classList.toggle("completed"); // strike-through text
-    circle.classList.toggle("checked"); // red circle 
+    li.classLi); // red circle 
   });
 
 
