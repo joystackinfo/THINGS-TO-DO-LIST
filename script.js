@@ -18,7 +18,7 @@ function addTask() {
   circle.className = "circle";
   circle.addEventListener("click", () => {
     li.classList.toggle("completed"); // strike-through text
-    circle.classList.toggle("checked"); // red circle + ✔
+    circle.classList.toggle("checked"); // red circle 
   });
 
 
